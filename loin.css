@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    font-family: 'Cairo', sans-serif;
+    
+}
+.heaer{
+    background-color: rgb(202, 57, 4);
+    position: relative;
+}
+nav{
+    max-width: 1366px;
+    width: 90%;
+    margin: 0 auto;
+    height: 10vh;
+ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: aliceblue;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0 20px;
+    flex: 2;
+
+}
+ul{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    flex: 1;
+}
+/*--------------------------------------*/
+
+  
+.containerLeft{
+    height: 90vh;
+    max-width: 1366px;
+    width: 90%;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+   
+}
+
+.container h4{
+       font-size: 25px;
+       color: orangered;
+       margin-bottom: 10px;
+}
+.container h2 {
+    font-size: 40px;
+}
+.container p{
+    font-size: 20px;
+}
+span{
+    color: orangered;
+}
+.ch{
+    display: none;
+}
+
+
+
+.imports{
+    width: 90%;
+    max-width: 1366px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.importAll{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    min-height: 30vh;
+    flex-wrap: wrap;
+   justify-content: center;
+}
+.import{
+    background-color: rgb(209, 224, 224);
+    margin: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+ 
+
+}
+.imports h2{
+    color: orangered;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+.import h4{
+    color: orangered;
+    font-size: 25px;
+}
+.imports p{
+
+    font-size: 18px;
+    padding: 15px 5px;
+}
+.phones{
+  max-width: 1366px;
+  width: 90%;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+.phones h2{
+    font-size: 40px;
+    color: orangered;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    
+}
+.phones .phoneAll{
+    height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.phones .phoneAll .phone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5px;
+}
+button{
+    background-color:orangered ;
+      width: 110px;
+      height: 40px;
+      border: none;
+      outline: none;
+      border-radius: 10px;
+}
+button a{
+    text-decoration: none;
+    font-size: 20px;
+   color: aliceblue;
+}
+footer{
+    background-color: orangered;
+    text-align: center;
+}
+/*-----++++++++++++++++++++++++++++----------*/
+@media (max-width: 900px) {
+    .ch{
+        display: block;
+    }
+  
+    .containerLeft{
+        text-align: center;
+        height: 70vh;
+    }
+    nav ul, .cut{
+        display: none; 
+     }
+    nav ul.open {
+       position:absolute ;
+       opacity: 0.9;
+       background-image: linear-gradient(orangered 0%,#000 100% );
+       top: 10vh;
+       left: 0;
+       right: 0;
+       width: 100%;
+       margin: 0 auto;
+       display: flex;
+       align-items: center;
+       flex-direction: column;
+       gap: 10px;
+       padding: 10px 0;
+    }
+ 
+    
+}
